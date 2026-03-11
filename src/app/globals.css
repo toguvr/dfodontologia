@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-marcellus);
+  --font-sans: var(--font-manrope);
+}
+
+:root {
+  --background: #f7f4ef;
+  --foreground: #18333a;
+  --card: #fffdf9;
+  --primary: #0f6661;
+  --primary-strong: #0b5551;
+  --secondary: #eef5f2;
+  --secondary-strong: #dcebe7;
+  --accent: #f3d7ca;
+  --muted-foreground: #5f7177;
+  --border: rgba(24, 51, 58, 0.12);
+  --ring: #0f6661;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(239, 245, 242, 0.9), transparent 38%),
+    linear-gradient(180deg, #fbfaf7 0%, var(--background) 100%);
+  color: var(--foreground);
+  font-family: var(--font-manrope), sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+::selection {
+  background: rgba(15, 102, 97, 0.18);
+}
+
+.font-display {
+  font-family: var(--font-marcellus), serif;
+  letter-spacing: -0.03em;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 0.2s ease-out;
+}
