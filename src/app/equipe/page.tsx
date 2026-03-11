@@ -15,6 +15,7 @@ export default function EquipePage() {
   return (
     <>
       <TeamSection />
+      
       <VideosSection />
       <TestimonialsSection />
       <FinalCtaSection />
