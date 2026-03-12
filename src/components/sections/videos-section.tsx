@@ -10,25 +10,26 @@ export function VideosSection() {
       <Container className="space-y-10">
         <SectionHeading
           eyebrow="Vídeos"
-          title="Os vídeos institucionais do site antigo agora fazem parte da experiência"
-          description="Mantive os dois vídeos já publicados pela clínica, com embed mais limpo e melhor hierarquia visual."
+          title="Conheça mais sobre a clínica"
+          description="Assista aos vídeos e conheça um pouco mais sobre a clínica."
           align="center"
         />
         <div className="grid gap-6 lg:grid-cols-2">
           {videos.map((video) => (
             <article
-              key={video.id}
+              key={video.src}
               className="overflow-hidden rounded-[2rem] border border-[var(--border)] bg-white shadow-sm"
             >
               <div className="aspect-video overflow-hidden bg-[var(--foreground)]">
-                <iframe
-                  title={video.title}
-                  src={`https://www.youtube-nocookie.com/embed/${video.id}`}
+                <video
                   className="h-full w-full"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+                  controls
+                  preload="metadata"
+                  playsInline
+                >
+                  <source src={video.src} type="video/mp4" />
+                  Seu navegador nao suporta reproducao de video.
+                </video>
               </div>
               <div className="p-6">
                 <div className="inline-flex items-center gap-2 rounded-full bg-[var(--secondary)] px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[var(--primary)]">

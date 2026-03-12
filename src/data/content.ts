@@ -169,16 +169,16 @@ export const results = [
 
 export const videos = [
   {
-    id: "kMQ1ZUnLAEk",
+    src: "https://togu-public.s3.us-east-1.amazonaws.com/Video+01.mp4",
     title: "Apresentação da clínica DF Odontologia",
     description:
-      "Vídeo institucional já utilizado no site atual, agora incorporado em uma seção mais coerente com a proposta da marca.",
+      "Apresentação da clínica, do atendimento e da proposta de cuidado oferecida aos pacientes.",
   },
   {
-    id: "JJPfyifXPig",
+    src: "https://togu-public.s3.us-east-1.amazonaws.com/Vi%CC%81deo+2+(1).mp4",
     title: "Conteúdo em vídeo sobre atendimento e experiência",
     description:
-      "Material em vídeo para reforçar proximidade, estrutura e percepção de confiança da clínica.",
+      "Vídeo institucional com mais informações sobre a clínica e a experiência de atendimento.",
   },
 ];
 

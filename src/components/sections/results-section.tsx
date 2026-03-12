@@ -10,8 +10,8 @@ export function ResultsSection() {
       <Container className="space-y-10">
         <SectionHeading
           eyebrow="Resultados"
-          title="Casos visuais apresentados com mais contexto e no lugar certo"
-          description="Os registros de antes e depois foram separados da galeria do consultório para não confundir ambiente da clínica com resultados clínicos e estéticos."
+          title="Resultados de tratamentos realizados na clínica"
+          description="Alguns casos que mostram a evolução clínica e estética dos tratamentos realizados."
         />
         <div className="grid gap-6 lg:grid-cols-3">
           {results.map((item) => (
@@ -33,8 +33,8 @@ export function ResultsSection() {
                   {item.title}
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[var(--muted-foreground)]">
-                  Imagens do acervo atual da clínica, mantidas no novo site com
-                  apresentação mais organizada e contextualizada.
+                  Registro visual de um dos tratamentos acompanhados pela
+                  equipe da clínica.
                 </p>
               </div>
             </article>
