@@ -11,7 +11,7 @@ export function GallerySection() {
         <SectionHeading
           eyebrow="Consultório"
           title="Um espaço pensado para acolher com leveza, organização e conforto"
-          description="A galeria agora mostra apenas o ambiente da clínica, sem misturar retratos profissionais ou registros de antes e depois."
+          description="Conheça os ambientes da DF Odontologia e veja como cada detalhe da clínica foi pensado para receber com conforto, organização e tranquilidade."
         />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {gallery.map((image, index) => (

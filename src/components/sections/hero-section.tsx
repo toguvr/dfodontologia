@@ -81,7 +81,7 @@ export function HeroSection() {
                 <div className="relative min-h-[205px] overflow-hidden rounded-[1.5rem]">
                   <Image
                     src="/images/team/dra-sarah-figorelle.jpg"
-                    alt="Dra. Letícia Duque e Dra. Sarah Figorelle na DF Odontologia"
+                    alt="Dra. Leticia Duque e Dra. Sarah Figorelle na DF Odontologia"
                     fill
                     className="object-cover object-center"
                     sizes="(max-width: 1024px) 50vw, 260px"
